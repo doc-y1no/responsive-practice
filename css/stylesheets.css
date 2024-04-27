@@ -1,0 +1,149 @@
+body {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.box {
+  width: 400px;
+  height: 400px;
+  background: #ff0000;
+}
+.red-box{
+  width: 300px;
+  height: 300px;
+  background: #ff0000;
+  display: inline-block;
+}
+.blue-box{
+width: 300px;
+height: 300px;
+margin-right: 150px;
+background: #0008ff;
+display: inline-block;
+}
+.green-box{
+  width: 300px;
+  height: 300px;
+  background: #22ff00;
+  display: inline-block;
+}
+.float-remove1{
+  width: 300px;
+  height: 300px;
+  background: #ff0000;
+  display: block;
+  float: inline-start;
+  display: flex;
+  justify-content: center;
+  }
+.float-remove2{
+  width: 300px;
+  height: 300px;
+  background: #0008ff;
+  display: block;
+  float: left;
+  display: flex;
+  justify-content: center;
+}
+.blue-box-queue{
+  width: 300px;
+  height: 300px;
+  background: #0008ff;
+  display: inline-block;
+  }
+.orange-box{
+  width: 300px;
+  height: 300px;
+  background: #ff4000;
+  display: inline-block;
+}
+.queue{
+text-align: center;
+line-height: 300px;
+}
+.que-des-green{
+  width: 300px;
+  height: 300px;
+  background: #00ff51;
+  display: inline-block;
+}
+.que-des-yellow{
+  width: 300px;
+  height: 300px;
+  background: #d4ff00;
+  display: inline-block;
+}
+.que-des-purple{
+  width: 300px;
+  height: 300px;
+  background: #ff00e1;
+  display: inline-block;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+.float-center {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width:961px) {
+  .box {
+  width: 400px;
+  height: 400px;
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+  }
+  .center.reverse {
+    display: flex;
+    justify-content: center;
+  }
+  .blue-box-queue.none{
+    display: none;
+  }
+}
+@media screen and (min-width:0px) and ( max-width:960px)  {
+  .box {
+  width: 200px;
+  height: 200px;
+  }
+  .color-change{
+    background: #077bff;
+  }
+  .margin-change1{
+    margin-right: 50px;
+  }
+  .float-remove1{
+    float: none;
+  }
+  .float-remove2{
+    float: none;
+  }
+  .float-center {
+    display: initial;
+  }
+  .center.reverse{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .que-des-yellow{
+    order: 3;
+  }
+  .que-des-purple{
+    order: 1;
+  }
+  .que-des-green{
+    order: 2;
+  }
+  .red-box.none{
+    display: none;
+  }
+  .blue-box-queue.none{
+    order: 1;
+  }
+  .green-box.none{
+    order: 2;
+  }
+}
